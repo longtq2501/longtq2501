@@ -23,7 +23,7 @@
 ## Featured Projects
 
 - [Tutor Pro](https://github.com/longtq2501/Tutor-Pro) – Peer tutoring platform (in development)
-- [next-spring-skills.com](https://github.com/longtq2501/next-spring-skills) – NextJS & SpringBoot Skill Set For Working with AI Agent
+- [next-spring-skills](https://github.com/longtq2501/next-spring-skills) – NextJS & SpringBoot Skill Set For Working with AI Agent
 
 ## Connect
 
