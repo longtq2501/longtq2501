@@ -18,12 +18,14 @@
 
 - **Tutor Pro** – An EdTech platform connecting students with peer tutors (Spring Boot + Next.js)
 - **next-spring-skills** – Sharing my experience with AI Agents and fullstack development
+- **RestaurantOS** - An Smart Service platform integrating with AI Features enhancing the way restaurent that serves customers.
 - Always passionate about solving real-world problems through code
 
 ## Featured Projects
 
 - [Tutor Pro](https://github.com/longtq2501/Tutor-Pro) – Peer tutoring platform (in development)
 - [next-spring-skills](https://github.com/longtq2501/next-spring-skills) – NextJS & SpringBoot Skill Set For Working with AI Agent
+- [RestaurantOS](https://github.com/longtq2501/RestaurantOS) - Smart Ordering Service platform (in development)
 
 ## Connect
 
