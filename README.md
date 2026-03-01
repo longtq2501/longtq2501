@@ -17,11 +17,11 @@
 
 ## About Me
 
-I'm a third-year CS student who believes the best way to learn is to **build real things**. I don't clone tutorials — I build products that solve problems I actually have, deploy them to production, and use them daily.
+I'm a third-year CS student who believes the best way to learn is to **ship real products**. I don't clone tutorials — I build systems that solve real problems, deploy them to production, and iterate on them daily.
 
-- 🚀 Built & deployed **Tutor Pro** solo — a full EdTech platform I use every day to manage my own tutoring business (10+ students)
-- 📦 Published **[next-spring-skills](https://github.com/longtq2501/next-spring-skills)** — ranked **#1 on npm** for `spring skills` among 1,000+ packages · 500+ downloads
-- 🍽️ Currently building **RestaurantOS** — AI-powered ordering platform
+- 🚀 Solo-built **Tutor Pro** — a freemium EdTech SaaS platform live in production with real users (tutors + students + admin portal)
+- 📦 Published **[next-spring-skills](https://github.com/longtq2501/next-spring-skills)** — ranked **#1 on npm** for `spring skills` among 1,000+ packages
+- 🍽️ Currently building **RestaurantOS** — AI-powered restaurant ordering platform
 - 🎯 Goal: Land a fullstack internship/fresher role in 2026
 - 🎨 Hobby: 3D modeling with Blender
 
@@ -52,23 +52,25 @@ I'm a third-year CS student who believes the best way to learn is to **build rea
 
 ## Featured Projects
 
-### 🟢 [Tutor Pro](https://tutor-pro-app.vercel.app) — LIVE in Production
+### 🟢 [Tutor Pro](https://tutor-pro-app.vercel.app) — Freemium EdTech SaaS · LIVE
 
-> EdTech platform I built solo and use every day to run my own tutoring business.
+> A full-stack multi-tenant SaaS platform — solo designed, built, deployed and actively used in production.
 
-**Stack:** Next.js · Spring Boot 3.4 · MySQL · WebSockets · WebRTC · Docker · Groq AI
+**Stack:** Next.js · Spring Boot 3.4 · MySQL · WebSockets · WebRTC · SSE · Docker · Groq AI
 
-| What I built | Impact |
+**3 roles, 1 codebase** — Role-based routing via Next.js middleware separates Admin, Tutor, and Student portals on a single domain.
+
+| Module | What it does |
 |---|---|
-| Auto-schedule generation from student timetables | Reduced setup from hours → **< 0.5 seconds** |
-| Bulk calendar engine (Optimistic Batch Processing) | 300+ sessions initialized in **< 800ms** |
-| SSE real-time notification system | Event delivery **< 500ms**, zero polling cost |
-| WebRTC + STOMP live classroom | Real-time whiteboard, screen share & recording |
-| Groq AI (Llama 3.3 70B) feedback engine | Smart session commentary in **< 300ms** |
-| VietQR payment with CRC-16 checksum | Reconciliation errors: 15% → **~0%** |
-| Drag-and-drop calendar with prefetching | Month navigation: **~0ms**, 60fps drag |
+| 📅 **Schedule Engine** | Auto-generates sessions from fixed timetables with conflict detection — hours of setup → **< 0.5s** |
+| 💰 **Finance + VietQR** | Sessions marked "taught" auto-update debt; bulk PDF invoices with pre-filled VietQR (NAPAS-247) |
+| 🎓 **Assessment System** | Paste-to-parse question import; timed MCQ + essay; instant auto-grading; tutor review flow |
+| 📡 **Live Classroom** | WebRTC + STOMP WebSocket; real-time whiteboard, screen share, session recording |
+| 🤖 **AI Feedback** | Groq (Llama 3.3 70B) generates session commentary in **< 300ms** |
+| 🔔 **Notifications** | SSE-based event delivery **< 500ms** — zero polling cost vs WebSocket |
+| 🛠️ **Admin Portal** | Platform-wide revenue, tutor/student growth, PRO vs FREE tier monitoring |
 
-Managing **10+ students** — scheduling, reporting, session tracking, payment invoicing.
+**Freemium model:** Free tier (5 students/tutor) · Pro tier (10 students/tutor) · **331+ production deployments**
 
 ---
 
@@ -78,7 +80,7 @@ Managing **10+ students** — scheduling, reporting, session tracking, payment i
 
 **Stack:** Spring Boot · Next.js · MySQL
 
-Designing RESTful API architecture and responsive frontend to reduce customer wait times through intelligent ordering automation.
+RESTful API architecture + responsive frontend focused on reducing customer wait times through AI-driven ordering automation.
 
 ---
 
@@ -94,8 +96,6 @@ Modular best practices, AI agent workflow protocols, and production-ready templa
 ```bash
 npx next-spring-skills
 ```
-
-Copies structured skill set and agent workflow directly into any project.
 
 ---
 
