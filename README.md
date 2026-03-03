@@ -94,7 +94,7 @@ RESTful API architecture + responsive frontend focused on reducing customer wait
 Modular best practices, AI agent workflow protocols, and production-ready templates for Next.js + Spring Boot projects.
 
 ```bash
-npx next-spring-skills
+npx @longtq2501/next-spring-skills
 ```
 
 ---
