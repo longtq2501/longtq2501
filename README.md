@@ -1,86 +1,71 @@
-<div align="center">
-
 # Hi, I'm Long 👋
 
-**Fullstack Developer** · Ho Chi Minh City, Vietnam 🇻🇳
-
-*Third-year CS student @ University of Transport Ho Chi Minh City*
+**Full-Stack Developer** · Ho Chi Minh City, Vietnam 🇻🇳  
+*Third-year IT student @ University of Transport Ho Chi Minh City*
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=flat-square&logo=linkedin&logoColor=white)](https://linkedin.com/in/ton-quynh-long-dev)
-[![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/longtq2501)
-[![Email](https://img.shields.io/badge/Email-EA4335?style=flat-square&logo=gmail&logoColor=white)](mailto:tonquynhlong05@gmail.com)
-[![npm](https://img.shields.io/badge/npm-CB3837?style=flat-square&logo=npm&logoColor=white)](https://www.npmjs.com/package/@longtq2501/next-spring-skills)
-
-</div>
+[![Gmail](https://img.shields.io/badge/Gmail-EA4335?style=flat-square&logo=gmail&logoColor=white)](mailto:tonquynhlong05@gmail.com)
 
 ---
 
-## About Me
+## About
 
-I'm a third-year CS student who believes the best way to learn is to **ship real products**. I don't clone tutorials — I build systems that solve real problems, deploy them to production, and iterate on them daily.
+I don't wait until I graduate to build real things.
 
-- 🚀 Solo-built **Tutor Pro** — a freemium EdTech SaaS platform live in production with real users (tutors + students + admin portal)
-- 📦 Published **[next-spring-skills](https://github.com/longtq2501/next-spring-skills)** — ranked **#1 on npm** for `spring skills` among 1,000+ packages
-- 🍽️ Currently building **RestaurantOS** — AI-powered restaurant ordering platform
-- 🎯 Goal: Land a fullstack internship/fresher role in 2026
+Currently juggling two production-level projects simultaneously — one solo, one as Tech Lead of a 6-person team. Both solve problems I've encountered directly: managing tutoring work, and coordinating emergency rescue operations.
+
+My focus is on systems that work at scale: real-time architecture, clean service boundaries, and performance that holds under actual load — not just in localhost.
+
+- 🚀 **Tutor Pro** — Solo full-stack project, running in production
+- 🌊 **Flood Rescue Coordination** — Tech Lead, 6-person team, active development
+- 🎯 Open to **internship / fresher roles** in 2026
 - 🎨 Hobby: 3D modeling with Blender
-
----
-
-## Tech Stack
-
-**Backend**
-
-![Java](https://img.shields.io/badge/Java-ED8B00?style=flat-square&logo=openjdk&logoColor=white)
-![Spring Boot](https://img.shields.io/badge/Spring_Boot-6DB33F?style=flat-square&logo=springboot&logoColor=white)
-![Spring Security](https://img.shields.io/badge/Spring_Security-6DB33F?style=flat-square&logo=springsecurity&logoColor=white)
-![JPA](https://img.shields.io/badge/JPA_Hibernate-59666C?style=flat-square&logo=hibernate&logoColor=white)
-
-**Frontend**
-
-![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
-![Next.js](https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=nextdotjs&logoColor=white)
-![React](https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=black)
-
-**Database & DevOps**
-
-![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=flat-square&logo=mysql&logoColor=white)
-![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
-![Vercel](https://img.shields.io/badge/Vercel-000000?style=flat-square&logo=vercel&logoColor=white)
 
 ---
 
 ## Featured Projects
 
-### 🟢 [Tutor Pro](https://tutor-pro-app.vercel.app) — Freemium EdTech SaaS · LIVE
+### [🎓 Tutor Pro](https://github.com/longtq2501/Tutor-Pro) · [Live Demo ↗](https://tutor-pro-app.vercel.app)
 
-> A full-stack multi-tenant SaaS platform — solo designed, built, deployed and actively used in production.
+> A complete EdTech platform built to automate every operational burden of a working tutor — **deployed and running in production**.
 
-**Stack:** Next.js · Spring Boot 3.4 · MySQL · WebSockets · WebRTC · SSE · Docker · Groq AI
+Built this because I *am* the user. Every feature exists because I needed it.
 
-**3 roles, 1 codebase** — Role-based routing via Next.js middleware separates Admin, Tutor, and Student portals on a single domain.
+| What it does | How |
+|:-------------|:----|
+| Generates 300+ sessions in < 800ms | Optimistic batch processing + JDBC batch inserts |
+| Real-time notifications < 500ms | SSE + Spring Events + `ConcurrentHashMap` emitter pool |
+| AI feedback in Vietnamese < 300ms | Groq inference API (Llama 3.3 70B) |
+| VietQR invoicing with CRC-16 checksum | NAPAS-247 standard, embedded in PDF |
+| WebRTC P2P live teaching room | Full-Mesh + STOMP WebSocket signaling |
+| Drag-and-drop calendar at 60fps | @dnd-kit + React.memo + prefetching |
 
-| Module | What it does |
-|---|---|
-| 📅 **Schedule Engine** | Auto-generates sessions from fixed timetables with conflict detection — hours of setup → **< 0.5s** |
-| 💰 **Finance + VietQR** | Sessions marked "taught" auto-update debt; bulk PDF invoices with pre-filled VietQR (NAPAS-247) |
-| 🎓 **Assessment System** | Paste-to-parse question import; timed MCQ + essay; instant auto-grading; tutor review flow |
-| 📡 **Live Classroom** | WebRTC + STOMP WebSocket; real-time whiteboard, screen share, session recording |
-| 🤖 **AI Feedback** | Groq (Llama 3.3 70B) generates session commentary in **< 300ms** |
-| 🔔 **Notifications** | SSE-based event delivery **< 500ms** — zero polling cost vs WebSocket |
-| 🛠️ **Admin Portal** | Platform-wide revenue, tutor/student growth, PRO vs FREE tier monitoring |
-
-**Freemium model:** Free tier (5 students/tutor) · Pro tier (10 students/tutor) · **331+ production deployments**
+**Stack:** `Next.js 15` `React 19` `TypeScript` `Spring Boot 3.4` `Java 21` `MySQL 8` `Groq AI` `WebRTC` `SSE` `Docker` `Railway`
 
 ---
 
-### 🔧 [RestaurantOS](https://github.com/longtq2501/RestaurantOS) — In Development
+### [🌊 Flood Rescue Coordination System](https://github.com/longtq2501/Flood-Rescue-Coordination-and-Relief-Management-System) · `Active Development`
 
-> AI-powered smart ordering platform to streamline restaurant operations.
+> A microservices platform for real flood emergency scenarios — from citizen rescue requests to team dispatching, live GPS tracking, and relief supply management.
 
-**Stack:** Spring Boot · Next.js · MySQL
+**Role: Tech Lead** — responsible for architecture decisions, full infra setup, module skeleton (FE + BE), CI/CD pipeline, and sprint management via Jira.
 
-RESTful API architecture + responsive frontend focused on reducing customer wait times through AI-driven ordering automation.
+```
+CITIZEN  →  submit GPS-tagged rescue request
+           ↓
+COORDINATOR  →  verify → assign nearest available team via map
+           ↓
+RESCUE TEAM  →  GPS auto-reports every 10s → coordinator tracks live
+           ↓
+MANAGER  →  monitor KPIs, manage relief supply warehouse, get low-stock alerts
+```
+
+**Key decisions:**
+- **Modular Monolith → Microservices** — validate business logic first, extract services after Sprint 1
+- **RabbitMQ + Kafka** — task routing (exactly-once) vs. event streaming (replayable) are different problems
+- **Database per Service** — strict bounded contexts from day one
+
+**Stack:** `Spring Boot` `Java 17` `Next.js` `PostgreSQL` `RabbitMQ` `Apache Kafka` `Nginx` `Docker` `GitHub Actions` `VPS`
 
 ---
 
@@ -94,15 +79,36 @@ RESTful API architecture + responsive frontend focused on reducing customer wait
 Modular best practices, AI agent workflow protocols, and production-ready templates for Next.js + Spring Boot projects.
 
 ```bash
+
 npx @longtq2501/next-spring-skills
+
 ```
 
 ---
 
-<div align="center">
+## Tech Stack
 
-**📢 Open to fullstack internship & fresher opportunities in 2026**
+**Backend**
+![Java](https://img.shields.io/badge/Java-ED8B00?style=flat-square&logo=openjdk&logoColor=white)
+![Spring Boot](https://img.shields.io/badge/Spring_Boot-6DB33F?style=flat-square&logo=springboot&logoColor=white)
+![Spring Security](https://img.shields.io/badge/Spring_Security-6DB33F?style=flat-square&logo=springsecurity&logoColor=white)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white)
+![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=flat-square&logo=mysql&logoColor=white)
 
-*Have a project idea or just want to connect? Reach out anytime.*
+**Frontend**
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
+![Next.js](https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=nextdotjs&logoColor=white)
+![React](https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=black)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind-06B6D4?style=flat-square&logo=tailwindcss&logoColor=white)
 
-</div>
+**Infrastructure & Messaging**
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
+![RabbitMQ](https://img.shields.io/badge/RabbitMQ-FF6600?style=flat-square&logo=rabbitmq&logoColor=white)
+![Kafka](https://img.shields.io/badge/Kafka-231F20?style=flat-square&logo=apachekafka&logoColor=white)
+![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=flat-square&logo=githubactions&logoColor=white)
+![Nginx](https://img.shields.io/badge/Nginx-009639?style=flat-square&logo=nginx&logoColor=white)
+
+---
+
+*Year 3 student. Two production-level projects. Always building.*  
+**📢 Open to fullstack internship & fresher opportunities — 2026**
