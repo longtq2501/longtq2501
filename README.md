@@ -50,6 +50,23 @@ Simultaneously, I'm leading a **6-person team** building a microservices platfor
 
 ---
 
+## Published on npm
+
+### [@longtq2501/next-spring-skills](https://www.npmjs.com/package/@longtq2501/next-spring-skills)
+
+> CLI boilerplate for Next.js + Spring Boot fullstack projects.
+
+![downloads](https://img.shields.io/npm/dt/@longtq2501/next-spring-skills?style=flat-square&color=7c6aff&label=downloads)
+![version](https://img.shields.io/npm/v/@longtq2501/next-spring-skills?style=flat-square&color=00e5c8)
+
+800+ downloads · Standardized best practices and code patterns for Next.js + Spring Boot.
+
+```bash
+npx @longtq2501/next-spring-skills
+```
+
+---
+
 ## Featured Projects
 
 ### [🎓 Tutor Pro](https://tutor-pro-app.vercel.app) — Production
