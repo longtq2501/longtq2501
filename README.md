@@ -16,7 +16,7 @@ I build things people actually use. Not toy projects — real systems with real 
 
 **Tutor Pro** started as a tool I built to manage my own tutoring business. It grew into a full EdTech platform with WebRTC live rooms, AI feedback (Groq Llama 3.3 70B), VietQR invoicing, and a real-time SSE notification engine. Core features complete, running in production with 10+ active users.
 
-Simultaneously, I'm leading a **6-person team** building a microservices platform for flood rescue coordination — responsible for architecture, CI/CD pipeline, RabbitMQ + Kafka event bus, and sprint management.
+Simultaneously, I'm leading a **6-person team** building a microservices platform for flood rescue coordination — responsible for architecture, CI/CD pipeline, RabbitMQ event bus, and sprint management.
 
 - 🔨 Currently: **Tutor Pro** (maintaining) · **Flood Rescue** (active development)
 - 🎯 Goal: Backend internship / fresher role in 2026
@@ -32,7 +32,6 @@ Simultaneously, I'm leading a **6-person team** building a microservices platfor
 ![Spring Boot](https://img.shields.io/badge/Spring_Boot_3.4-6DB33F?style=flat-square&logo=springboot&logoColor=white)
 ![MySQL](https://img.shields.io/badge/MySQL_8.0-4479A1?style=flat-square&logo=mysql&logoColor=white)
 ![RabbitMQ](https://img.shields.io/badge/RabbitMQ-FF6600?style=flat-square&logo=rabbitmq&logoColor=white)
-![Kafka](https://img.shields.io/badge/Kafka-231F20?style=flat-square&logo=apachekafka&logoColor=white)
 
 **Frontend**
 
@@ -86,12 +85,12 @@ npx @longtq2501/next-spring-skills
 
 > Microservices platform for real flood emergency scenarios — GPS rescue requests, live dispatching, resource management.
 
-**Stack:** Spring Boot · Java 21 · MySQL · RabbitMQ · Kafka · Nginx · Docker · GitHub Actions CI/CD · Next.js
+**Stack:** Spring Boot · Java 21 · MySQL · RabbitMQ · Spring Cloud Gateway · Docker · GitHub Actions CI/CD · Next.js
 
-- 🏗️ 6 microservices, independently deployable
+- 🏗️ 7 microservices, independently deployable
 - 📡 GPS tracking with 10s update interval
 - 👥 5 actor roles: Citizen · Rescue Team · Dispatcher · Admin · Reporter
-- 🔄 Event-driven architecture with RabbitMQ + Kafka
+- 🔄 Event-driven architecture with RabbitMQ
 
 ---
 
