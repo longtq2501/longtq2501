@@ -67,7 +67,7 @@ npx @longtq2501/next-spring-skills
 
 ## Featured Projects
 
-### [🎓 Tutor Pro](https://tutor-pro-app.vercel.app) — Production · Maintaining
+### [🎓 Tutor Pro](https://tutorpro.id.vn) — Production · Maintaining
 
 > EdTech platform for professional tutor management. Core-complete, 10+ active users running daily.
 
